@@ -7,11 +7,20 @@ typedef struct
   int num_scelte; 
 } Livello;
 
+
+void generaSoluzioni(Livello* vettore, int dimVettore); 
 int princ_molt(int pos, Livello *val, int *sol, int n, int count);
+void elaboraSoluzione(int dim, int* sol); 
+
+void generaSoluzioni(Livello* vettore, int dimVettore)
+{
+  int* sol = malloc(dimVettore*sizeof(int)); 
+  int indiceRicorsione = 0; 
+  int Nsoluzioni = princ_molt(indiceRicorsione, vettore, sol, dimVttore, 0); 
+}
 
 int princ_molt(int pos, Livello *val, int *sol, int n, int count) 
 {
-  
   if (pos >= n) 
   {
     elaboraSoluzione(n, sol); 
