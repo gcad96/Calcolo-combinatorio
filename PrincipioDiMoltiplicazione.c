@@ -16,7 +16,7 @@ void generaSoluzioni(Livello* vettore, int dimVettore)
 {
   int* sol = malloc(dimVettore*sizeof(int)); 
   int indiceRicorsione = 0; 
-  int Nsoluzioni = princ_molt(indiceRicorsione, vettore, sol, dimVttore, 0); 
+  int Nsoluzioni = princ_molt(indiceRicorsione, vettore, sol, dimVettore, 0); 
 }
 
 int princ_molt(int pos, Livello *val, int *sol, int n, int count) 
